@@ -11,15 +11,15 @@ const Home = () => {
   const images = [
     {
       src: slide1,
-      alt: "description",
+      alt: "Postnatal mouse strial microvasculatures with macrophages",
     },
     {
       src: slide2,
-      alt: "description",
+      alt: "Auditory nerve",
     },
     {
       src: slide3,
-      alt: "description",
+      alt: "Auditory cortex",
     },
     {
       src: slide4,
