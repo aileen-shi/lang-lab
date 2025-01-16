@@ -19,7 +19,7 @@ const Navbar = () => {
     <div>
       <nav
         className={`absolute z-20 top-0 left-0 w-full p-4 h-24 ${
-          isHome ? "bg-black opacity-75 text-white" : "bg-white text-slate-950"
+          isHome ? "bg-black opacity-75 text-white" : "bg-white text-cyan-950"
         }`}
       >
         <div className="flex container mx-auto justify-between items-center font-open-sans">
@@ -37,9 +37,17 @@ const Navbar = () => {
             onClick={() => setHamburgerOpen(!isHamburgerOpen)}
           >
             {isHamburgerOpen ? (
-              <X className="text-white size-14 hover:cursor-pointer hover:text-sky-600" />
+              <X
+                className={`size-14 hover:cursor-pointer hover:text-sky-600 ${
+                  isHome ? "text-white" : "text-cyan-950"
+                }`}
+              />
             ) : (
-              <Menu className="text-white size-14 hover:cursor-pointer hover:text-sky-600" />
+              <Menu
+                className={`size-14 hover:cursor-pointer hover:text-sky-600 ${
+                  isHome ? "text-white" : "text-cyan-950"
+                }`}
+              />
             )}
           </div>
 
@@ -56,7 +64,7 @@ const Navbar = () => {
             <Link
               to="/research"
               className={`hover:text-sky-600 ${
-                isCurrent("research") ? "text-sky-600" : ""
+                isCurrent("/research") ? "text-sky-600" : ""
               }`}
             >
               Research
@@ -93,7 +101,7 @@ const Navbar = () => {
       <div
         className={`mobile-menu absolute z-20 lg:hidden space-y-4 mt-24 py-2 flex flex-col justify-center w-full items-center text-3xl font-bold ${
           isHamburgerOpen ? "block" : "hidden"
-        } ${isHome ? "bg-black text-white" : "bg-white text-slate-950"}`}
+        } ${isHome ? "bg-black text-white" : "bg-white text-cyan-950"}`}
       >
         <Link to="/" className="hover:text-sky-600">
           Home
