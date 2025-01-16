@@ -93,9 +93,7 @@ const Navbar = () => {
       <div
         className={`mobile-menu absolute z-20 lg:hidden space-y-4 mt-24 py-2 flex flex-col justify-center w-full items-center text-3xl font-bold ${
           isHamburgerOpen ? "block" : "hidden"
-        } ${
-          isHome ? "bg-black opacity-75 text-white" : "bg-white text-slate-950"
-        }`}
+        } ${isHome ? "bg-black text-white" : "bg-white text-slate-950"}`}
       >
         <Link to="/" className="hover:text-sky-600">
           Home
