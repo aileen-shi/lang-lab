@@ -10,11 +10,7 @@ const Research = () => {
   return (
     <div>
       <Navbar />
-      <ImageBanner
-        src={AuditoryNerve}
-        alt="Auditory nerve"
-        classname="position-top-center"
-      />
+      <ImageBanner src={AuditoryNerve} alt="Auditory nerve" height="h-96" />
       <TextBanner text="Research" />
       <ResearchSections />
       <Footer />

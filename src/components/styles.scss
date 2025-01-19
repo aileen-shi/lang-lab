@@ -2,6 +2,14 @@
   height: calc(100vh - 6rem);
 }
 
-.position-top-center {
+.image--center-top {
   object-position: 50% 30%;
+}
+
+.image--top-most {
+  object-position: 50% 0%;
+}
+
+.image--height {
+  height: 40rem;
 }
