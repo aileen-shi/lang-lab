@@ -1,10 +1,12 @@
-import { Profile } from "./profile";
+import { ProfileCard } from "./profileCard";
 import Tyreek from "../assets/images/Members/Tyreek.jpg";
 import Shelby from "../assets/images/Members/Shelby.jpg";
 import Emily from "../assets/images/Members/Emily.jpg";
 import Olivia from "../assets/images/Members/Olivia.jpg";
+import Jiaying from "../assets/images/Members/Jiaying.jpg";
+import Juhong from "../assets/images/Members/Juhong.jpeg";
 
-const profiles: Profile[] = [
+const Profiles: ProfileCard[] = [
   {
     image: Tyreek,
     name: "Tyreek Jenkins",
@@ -34,18 +36,18 @@ const profiles: Profile[] = [
       "Olivia is a scholar in the post-baccalaureate research education program (PREP) for biomedical research at MUSC. She has an interest in  understanding the potential contributions of a high-fat diet to aberrant macrophage activity and chronic cochlear inflammation, which both play a role in the progression of age-related hearing loss. In her free time,  she enjoys baking, reading, and playing musical instruments.",
   },
   {
-    image: "",
+    image: Jiaying,
     name: "Jiaying Wu",
     background: "B.S., M.S. Research Specialist",
     about:
       "Jiaying joined the Lang Lab in 2022, studying auditory nerve survival  and degeneration. She specializes in animal husbandry, management of  mouse colonies, auditory function measurements, cochlear dissection,  immunohistochemistry staining, and data analysis of degenerative cochlea tissues.",
   },
   {
-    image: "",
+    image: Juhong,
     name: "Juhong Zhu",
     background: "B.S., M.S. Research Specialist",
     about:
       "Junhong has been responsible for tissue processing and sectioning, and  immunostaining assays for high-resolution confocal imaging of the  cochlea and brain (including both mouse and human specimens",
   },
 ];
-export default profiles;
+export default Profiles;

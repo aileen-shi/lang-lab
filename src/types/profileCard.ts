@@ -1,7 +1,7 @@
-export interface Profile {
+export interface ProfileCard {
   image: string;
   name: string;
   background: string;
   about: string;
 }
-export default Profile;
+export default ProfileCard;
